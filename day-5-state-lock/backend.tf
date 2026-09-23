@@ -4,5 +4,6 @@ terraform {
     key = "terraform-statefile/terraformtfstate"
     region = "us-east-1"
     use_lockfile = true    #supports terraform latest version >=1.10
+    dynamodb_table = "terraform-statefile-locking"
   }
 }

@@ -12,7 +12,7 @@ resource "aws_subnet" "dev" {
 
 resource "aws_instance" "web" {
     ami = "ami-0fef201115eefe936"
-    instance_type = "t2.micro"
+    instance_type = "t2.medium"
     subnet_id = aws_subnet.dev.id
     tags = {
       Name = "web_instance"
